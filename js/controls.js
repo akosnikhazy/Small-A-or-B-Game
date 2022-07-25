@@ -9,37 +9,37 @@ let game = new Game(10,
 game.ini();
 
 document.getElementById("startGame").addEventListener("click",function(){
-game.startGame();
+    game.startGame();
 
 });
 
 document.getElementById("restartGame").addEventListener("click",function(){
-game.ini();
+    game.ini();
 });
 
 var waitForIt = false;
 document.querySelectorAll("input[name='q']").forEach((input) => {
-input.addEventListener('change',function(){
+    input.addEventListener('change',function(){
 
-if(!waitForIt)
-{
-if((input.getAttribute("id") == "Ar" &&  game.getCorrect() == 0) || (input.getAttribute("id") == "Br" &&  game.getCorrect() == 1))
-{
-game.setScore( ++game.score);
-input.parentElement.classList.add("correct");
-} else {
-input.parentElement.classList.add("wrong");
-}
+        if(!waitForIt)
+        {
+            if((input.getAttribute("id") == "Ar" &&  game.getCorrect() == 0) || (input.getAttribute("id") == "Br" &&  game.getCorrect() == 1))
+        {
+            game.setScore( ++game.score);
+            input.parentElement.classList.add("correct");
+        } else {
+            input.parentElement.classList.add("wrong");
+        }
 
-waitForIt = !waitForIt;
-setTimeout(function(){
-input.parentElement.classList.remove("correct");
-input.parentElement.classList.remove("wrong");
-waitForIt = !waitForIt;
-game.loadNextQuote();
-},500);
+        waitForIt = !waitForIt;
+        setTimeout(function(){
+            input.parentElement.classList.remove("correct");
+            input.parentElement.classList.remove("wrong");
+            waitForIt = !waitForIt;
+            game.loadNextQuote();
+        },500);
 
-}
+        }
 
-});
+    });
 });
