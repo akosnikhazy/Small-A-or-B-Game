@@ -39,3 +39,10 @@ div{
     background:#a83232;
     color:#eee;
 }
+footer{
+    text-align: center;
+    font-size: 0.8em;
+}
+footer a{
+    color: #666;   
+}
