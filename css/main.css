@@ -31,6 +31,10 @@ div{
     max-width: 800px;
     margin: 0 auto;
 }
+#end{
+    text-align: center;
+    font-size: 2em;
+}
 .correct{
     background:#32a852;
     color:#eee;
