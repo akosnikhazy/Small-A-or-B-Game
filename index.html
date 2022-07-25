@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>A or B</title>
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+
+  <body>
+   
+        <div id="start">
+            <h1 id="gameTitle">A or B game</h1>
+            <p id="gameDescription"></p>
+            <button id="startGame">START</button>
+        </div>
+        <div id="game">
+            <div id="quote"></div>
+            <div id="answer"><label id="A"><span id="gameAText"></span><input type="radio" id="Ar" name="q"></label><label id="B"><span id="gameBText"></span><input type="radio" id="Br" name="q"></label></div>
+        </div>
+        <div id="end">
+            Your score: <span id="score"></span>/<span id="scorefrom"></span>
+            <br>
+            <button id="restartGame">Try Again</button>
+        </div>
+        <script src="js/game.class.js"></script>
+        <script src="js/controls.js"></script>
+
+  </body>
+</html>

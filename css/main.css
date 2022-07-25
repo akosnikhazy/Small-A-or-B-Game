@@ -1,0 +1,41 @@
+input[name="q"]{
+    display:none;
+}
+
+button{
+    cursor: pointer;
+}
+
+#quote{
+    text-align:center;
+    font-size: 2em;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #666;
+    margin-bottom: 10px;
+    min-height: 300px;
+}
+#answer{
+    display: flex;
+    justify-content: space-around;
+}
+
+label{
+    text-align:center;
+    width: 125px;
+    padding:20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+div{
+    max-width: 800px;
+    margin: 0 auto;
+}
+.correct{
+    background:#32a852;
+    color:#eee;
+}
+.wrong{
+    background:#a83232;
+    color:#eee;
+}
